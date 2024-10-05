@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'rubik-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/RubikRegular.woff2) format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'rubik-semibold';
+    font-style: normal;
+    font-weight: 600;
+    src: url(./fonts/RubikSemiBold.woff2) format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'rubik-extrabold';
+    font-style: normal;
+    font-weight: 800;
+    src: url(./fonts/RubikExtraBold.woff2) format('woff2');
+  }
+}
