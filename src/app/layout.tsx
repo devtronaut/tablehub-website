@@ -1,24 +1,20 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
+import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Tablehub website",
-  description: "Website for tablehub. Showcase and information for interested clubs.",
-};
+    title: 'Tablehub website',
+    description:
+        'Website for tablehub. Showcase and information for interested clubs.',
+}
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode
 }>) {
-  return (
-    <html lang="de">
-      <body
-        className={`font-normal antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+    return (
+        <html lang="de">
+            <body className={`font-normal antialiased`}>{children}</body>
+        </html>
+    )
 }
