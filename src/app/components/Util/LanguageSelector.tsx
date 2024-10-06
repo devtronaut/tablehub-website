@@ -5,7 +5,11 @@ import { setUserLocale } from '@/services/locale'
 export const LanguageSelector = () => {
     return (
         <div className="dropdown dropdown-end">
-            <div tabIndex={0} role="button" className="btn btn-ghost m-1">
+            <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost m-1 flex flex-row flex-nowrap"
+            >
                 <LanguageIcon />
                 <ChevronIcon />
             </div>

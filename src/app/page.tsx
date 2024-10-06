@@ -1,8 +1,10 @@
 import { useTranslations } from 'next-intl'
 import Header from './components/Util/Header'
-import Title from './components/Util/Title'
+import HomeSection from './components/Sections/Home'
+import AboutSection from './components/Sections/About'
+import DemoSection from './components/Sections/Demo'
 
-export default function Home() {
+const Landing = () => {
     const t = useTranslations('HomePage')
 
     return (
@@ -10,7 +12,12 @@ export default function Home() {
             <Header />
             <main>
                 <p>{t('title')}</p>
+                <HomeSection />
+                <DemoSection />
+                <AboutSection />
             </main>
         </div>
     )
 }
+
+export default Landing
