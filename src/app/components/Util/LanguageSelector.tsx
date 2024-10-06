@@ -1,3 +1,7 @@
+'use client'
+
+import { setUserLocale } from '@/services/locale'
+
 export const LanguageSelector = () => {
     return (
         <div className="dropdown dropdown-end">
@@ -9,25 +13,41 @@ export const LanguageSelector = () => {
                 tabIndex={0}
                 className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
             >
-                <li>
+                <li
+                    onClick={() => {
+                        setUserLocale('de')
+                    }}
+                >
                     <a>
                         <span className="badge badge-outline">DE</span>
                         Deutsch
                     </a>
                 </li>
-                <li>
+                <li
+                    onClick={() => {
+                        setUserLocale('fr')
+                    }}
+                >
                     <a>
                         <span className="badge badge-outline">FR</span>
                         Französisch
                     </a>
                 </li>
-                <li>
+                <li
+                    onClick={() => {
+                        setUserLocale('it')
+                    }}
+                >
                     <a>
                         <span className="badge badge-outline">IT</span>
                         Italienisch
                     </a>
                 </li>
-                <li>
+                <li
+                    onClick={() => {
+                        setUserLocale('en')
+                    }}
+                >
                     <a>
                         <span className="badge badge-outline">EN</span>
                         Englisch
@@ -63,7 +83,7 @@ const ChevronIcon = () => {
             viewBox="0 0 16 16"
         >
             <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
             />
         </svg>

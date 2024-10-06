@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { NextIntlClientProvider } from 'next-intl'
+import { getLocale, getMessages } from 'next-intl/server'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -7,17 +9,22 @@ export const metadata: Metadata = {
         'Website for tablehub. Showcase and information for interested clubs.',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode
 }>) {
+    const locale = await getLocale()
+    const messages = await getMessages()
+
     return (
-        <html lang="de">
+        <html lang={locale}>
             <body
                 className={`font-normal antialiased dark:bg-backgroundDark bg-backgroundLight`}
             >
-                {children}
+                <NextIntlClientProvider messages={messages}>
+                    {children}
+                </NextIntlClientProvider>
             </body>
         </html>
     )
