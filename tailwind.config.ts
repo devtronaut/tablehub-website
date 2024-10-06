@@ -16,10 +16,11 @@ const config: Config = {
         },
         extend: {
             colors: {
-                background: 'var(--background)',
-                foreground: 'var(--foreground)',
-            },
-        },
+                backgroundDark: '#2a303c',
+                backgroundLight: '#eceff4',
+                secondaryBlue: '#344950' 
+            }
+        }
     },
     plugins: [daisyui],
 }
