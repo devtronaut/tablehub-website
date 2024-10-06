@@ -5,7 +5,9 @@ export default function Title() {
             <span className="badge badge-accent absolute top-0 -right-10 -z-10">
                 Beta
             </span>
-            <p className="font-extrabold text-4xl text-white">Tablehub</p>
+            <p className="font-extrabold text-4xl text-black dark:text-white">
+                Tablehub
+            </p>
         </div>
     )
 }
