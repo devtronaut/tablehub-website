@@ -1,5 +1,6 @@
 import Title from './Title'
 import { ThemeToggle } from './ThemeToggle'
+import { LanguageSelector } from './LanguageSelector'
 
 export default function Header() {
     return (
@@ -7,8 +8,9 @@ export default function Header() {
             <div className="w-fit">
                 <Title />
             </div>
-            <div className="w-fit">
+            <div className="w-fit flex flex-row gap-4">
                 <ThemeToggle />
+                <LanguageSelector />
             </div>
         </div>
     )
