@@ -4,6 +4,8 @@ type SectionTitleProps = {
 
 export const SectionTitle = ({ content }: SectionTitleProps) => {
     return (
-        <p className="w-full text-3xl font-extrabold text-center">{content}</p>
+        <p className="w-full text-2xl sm:text-3xl font-semibold text-center">
+            {content}
+        </p>
     )
 }

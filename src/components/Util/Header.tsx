@@ -10,7 +10,7 @@ export default function Header() {
                 <Title />
                 <Navbar />
             </div>
-            <div className="w-fit flex flex-row flex-nowrap gap-4">
+            <div className="w-fit flex flex-row flex-nowrap gap-1 lg:gap-4">
                 <ThemeToggle />
                 <LanguageSelector />
             </div>

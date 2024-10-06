@@ -40,7 +40,7 @@ export default async function RootLayout({
                 />
             </head>
             <body
-                className={`font-normal antialiased dark:bg-backgroundDark bg-backgroundLight dark:text-white text-black`}
+                className={`font-normal text-md antialiased dark:bg-backgroundDark bg-backgroundLight dark:text-white text-black`}
             >
                 <NextIntlClientProvider messages={messages}>
                     {children}

@@ -8,14 +8,14 @@ export const LanguageSelector = () => {
             <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost m-1 flex flex-row flex-nowrap"
+                className="btn btn-ghost p-2 lg:p-4 lg:m-1 flex flex-row flex-nowrap"
             >
                 <LanguageIcon />
                 <ChevronIcon />
             </div>
             <ul
                 tabIndex={0}
-                className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+                className="dropdown-content menu dark:bg-backgroundDark/75 bg-backgroundLight/75 backdrop-blur-sm rounded-box z-[1] w-52 p-2 shadow"
             >
                 <li
                     onClick={() => {
@@ -23,7 +23,7 @@ export const LanguageSelector = () => {
                     }}
                 >
                     <a>
-                        <span className="badge badge-outline">DE</span>
+                        <span className="badge badge-outline w-10">DE</span>
                         Deutsch
                     </a>
                 </li>
@@ -33,8 +33,8 @@ export const LanguageSelector = () => {
                     }}
                 >
                     <a>
-                        <span className="badge badge-outline">FR</span>
-                        Französisch
+                        <span className="badge badge-outline w-10">FR</span>
+                        Francais
                     </a>
                 </li>
                 <li
@@ -43,8 +43,8 @@ export const LanguageSelector = () => {
                     }}
                 >
                     <a>
-                        <span className="badge badge-outline">IT</span>
-                        Italienisch
+                        <span className="badge badge-outline w-10">IT</span>
+                        Italiano
                     </a>
                 </li>
                 <li
@@ -53,8 +53,8 @@ export const LanguageSelector = () => {
                     }}
                 >
                     <a>
-                        <span className="badge badge-outline">EN</span>
-                        Englisch
+                        <span className="badge badge-outline w-10">EN</span>
+                        English
                     </a>
                 </li>
             </ul>
@@ -66,9 +66,7 @@ const LanguageIcon = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            className="bi bi-translate dark:fill-white fill-black"
+            className="bi bi-translate size-4 lg:size-6 dark:fill-white fill-black"
             viewBox="0 0 16 16"
         >
             <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
