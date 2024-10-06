@@ -1,6 +1,6 @@
 'use client'
 
-import { useTheme, ThemeOptions } from '@/app/hooks/useTheme'
+import { useTheme, ThemeOptions } from '@/hooks/useTheme'
 import { ChangeEvent } from 'react'
 
 export const ThemeToggle = () => {

@@ -1,7 +1,7 @@
-import Header from './components/Util/Header'
-import HomeSection from './components/Sections/Home'
-import AboutSection from './components/Sections/About'
-import DemoSection from './components/Sections/Demo'
+import Header from '../components/Util/Header'
+import HomeSection from '../components/Sections/Home'
+import AboutSection from '../components/Sections/About'
+import DemoSection from '../components/Sections/Demo'
 
 const Landing = () => {
     return (
