@@ -20,7 +20,7 @@ export const ThemeToggle = () => {
             <input
                 type="checkbox"
                 className={`toggle mx-2 ${isLightMode() ? 'border-sky-300 bg-white hover:bg-sky-100 [--tglbg:#1d4ed8]' : 'border-yellow-100 bg-white hover:bg-yellow-100 [--tglbg:#0f172a]'}`}
-                defaultChecked
+                defaultChecked={isDarkMode()}
                 onChange={e => handleToggleChange(e)}
             />
             <MoonIcon isActive={isDarkMode()} />

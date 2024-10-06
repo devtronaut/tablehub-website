@@ -16,11 +16,14 @@ const config: Config = {
         },
         extend: {
             colors: {
-                backgroundDark: '#2a303c',
+                backgroundDark: '#1d232a',
                 backgroundLight: '#eceff4',
             },
         },
     },
     plugins: [daisyui],
+    daisyui: {
+        base: false,
+    },
 }
 export default config
