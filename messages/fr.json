@@ -1,5 +1,16 @@
 {
-    "HomePage": {
-        "title": "Bienvenue dans ce monde merveilleux!"
+    "home": {
+        "welcome": "Bienvenue sur",
+        "interested": "Intéressé? Cool,",
+        "readon": "continuez à lire..."
+    },
+    "usp": {
+        "intro": "Enrichissez la page d'accueil de votre club avec des résultats, des matchs et des classements !",
+        "updatedTitle": "Actualisé",
+        "automatedContent": "Aucune action manuelle requise après la configuration initiale.",
+        "automatedTitle": "Automatisé",
+        "simpleContent": "Développé en pensant à l'utilisateur final. Peu de complexité, intégration facile, bon support.",
+        "simpleTitle": "Simple",
+        "updatedContent": "Informations mises à jour quotidiennement depuis l’API Swiss Volley."
     }
 }

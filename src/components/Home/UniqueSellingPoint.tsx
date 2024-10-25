@@ -1,35 +1,29 @@
-import path from 'path'
+import { useTranslations } from 'next-intl'
 import { ReactNode } from 'react'
 
 const UniqueSellingPoint = () => {
+    const t = useTranslations('usp')
+
     return (
         <div className="w-full text-center space-y-6">
-            <p>Enhance your club homepage with results, games and rankings!</p>
+            <p>{t('intro')}</p>
             <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:items-stretch gap-6">
                 <UspCard
                     image={UpdatedIcon()}
-                    title={'Updated'}
-                    content={'Information updated daily from Swiss Volley API.'}
+                    title={t('updatedTitle')}
+                    content={t('updatedContent')}
                 />
                 <UspCard
                     image={AutomatedIcon()}
-                    title={'Automated'}
-                    content={'No manual action required after initial setup.'}
+                    title={t('automatedTitle')}
+                    content={t('automatedContent')}
                 />
                 <UspCard
                     image={EasyIcon()}
-                    title={'Simple'}
-                    content={
-                        'Developed with the end user in mind. Little complexity, easy integration, good support.'
-                    }
+                    title={t('simpleTitle')}
+                    content={t('simpleContent')}
                 />
             </div>
-            <p>
-                Interested? Cool,{' '}
-                <a href="#demo" className="text-shimmer hover:underline">
-                    read on ...
-                </a>
-            </p>
         </div>
     )
 }
