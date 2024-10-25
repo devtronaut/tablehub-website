@@ -21,15 +21,15 @@ const config: Config = {
                 backgroundLight: '#eceff4',
                 cardDark: '#282f39',
                 cardLight: '#fafcfc',
-                shimmer: '#36c9b9'
+                shimmer: '#36c9b9',
             },
             animation: {
                 wiggle: 'wiggle 2s ease infinite',
                 bounce: 'bounce 2s linear infinite',
-                spin: 'spin 3s linear infinite'
+                spin: 'spin 3s linear infinite',
             },
             transitionTimingFunction: {
-                'bounce': 'cubic-bezier(0.280, 0.840, 0.420, 1)'
+                bounce: 'cubic-bezier(0.280, 0.840, 0.420, 1)',
             },
             keyframes: {
                 wiggle: {
@@ -46,10 +46,10 @@ const config: Config = {
                     '100%': { transform: 'scale(1, 1)      translateY(0)' },
                 },
                 spin: {
-                    'from': { transform: 'rotate(0deg)' },
-                    'to': { transform: 'rotate(-360deg)' }
-                }
-            }
+                    from: { transform: 'rotate(0deg)' },
+                    to: { transform: 'rotate(-360deg)' },
+                },
+            },
         },
     },
     plugins: [daisyui],

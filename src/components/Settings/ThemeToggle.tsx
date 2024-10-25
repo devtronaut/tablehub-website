@@ -1,7 +1,7 @@
 'use client'
 
 import { useTheme, ThemeOptions } from '@/hooks/useTheme'
-import { ChangeEvent, useEffect } from 'react'
+import { ChangeEvent } from 'react'
 
 export const ThemeToggle = () => {
     const [isLightMode, isDarkMode, changeTheme] = useTheme()
