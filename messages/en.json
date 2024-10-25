@@ -1,0 +1,16 @@
+{
+    "home": {
+        "welcome": "Welcome to",
+        "interested": "Interested? Cool,",
+        "readon": "read on ..."
+    },
+    "usp": {
+        "intro": "Enhance your club homepage with results, games and rankings!",
+        "updatedTitle": "Updated",
+        "updatedContent": "Information updated daily from Swiss Volley API.",
+        "automatedTitle": "Automated",
+        "automatedContent": "No manual action required after initial setup.",
+        "simpleTitle": "Simple",
+        "simpleContent": "Developed with the end user in mind. Little complexity, easy integration, good support."
+    }
+}

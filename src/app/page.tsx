@@ -1,13 +1,19 @@
-export default function Home() {
+import Header from '../components/Util/Header'
+import HomeSection from '../components/Sections/Home'
+import AboutSection from '../components/Sections/About'
+import DemoSection from '../components/Sections/Demo'
+
+const Landing = () => {
     return (
-        <div className="min-h-screen p-8 pb-20 gap-16 sm:p-20">
-            <p>Coming soon ... !</p>
-            <div className="relative w-fit">
-                <span className="badge badge-accent absolute top-0 -right-10 -z-10">
-                    Beta
-                </span>
-                <p className="font-extrabold text-4xl">Tablehub</p>
-            </div>
+        <div className="min-h-screen">
+            <Header />
+            <main className="mt-[120px] snap-y snap-proximity p-8">
+                <HomeSection />
+                <DemoSection />
+                <AboutSection />
+            </main>
         </div>
     )
 }
+
+export default Landing

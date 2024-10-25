@@ -1,3 +1,17 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.experimental.updateImportsOnPaste": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "typescript.surveys.enabled": false,
+    "i18n-ally.localesPaths": ["messages", "src/i18n"],
+    "editor.colorDecoratorsLimit": 5000,
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.extract.ignoredByFiles": {
+        "src/components/Home/UniqueSellingPoint.tsx": ["0 -960 960 960"]
+    }
 }
