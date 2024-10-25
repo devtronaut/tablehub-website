@@ -8,7 +8,7 @@ const HomeSection = () => {
     return (
         <div
             id="home"
-            className="h-svh scroll-mt-[120px] flex flex-col items-center gap-6"
+            className="scroll-mt-[120px] mb-20 flex flex-col items-center gap-6"
         >
             <div className="space-y-2">
                 <p className="text-2xl w-full text-center">{t('welcome')}</p>
