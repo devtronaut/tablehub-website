@@ -1,8 +1,26 @@
 'use client'
 
-import { setUserLocale } from '@/services/locale'
+import { Locale } from '@/i18n/config'
+import { setUserLocale, getUserLocale } from '@/services/locale'
+import { useEffect, useState } from 'react'
 
 export const LanguageSelector = () => {
+    const [currentLang, setCurrentLang] = useState('')
+
+    useEffect(() => {
+        const getLang = async () => {
+            const locale = await getUserLocale()
+            setCurrentLang(locale)
+        }
+
+        getLang().catch(console.error)
+    }, [])
+
+    const handleLanguageChange = (newLocale: Locale) => {
+        setUserLocale(newLocale)
+        setCurrentLang(newLocale)
+    }
+
     return (
         <div className="dropdown dropdown-end">
             <div
@@ -10,7 +28,10 @@ export const LanguageSelector = () => {
                 role="button"
                 className="btn btn-ghost p-2 lg:p-4 lg:m-1 flex flex-row flex-nowrap"
             >
-                <LanguageIcon />
+                {currentLang === 'de' && <GermanItem />}
+                {currentLang === 'fr' && <FrenchItem />}
+                {currentLang === 'it' && <ItalianItem />}
+                {currentLang === 'en' && <EnglishItem />}
                 <ChevronIcon />
             </div>
             <ul
@@ -19,42 +40,38 @@ export const LanguageSelector = () => {
             >
                 <li
                     onClick={() => {
-                        setUserLocale('de')
+                        handleLanguageChange('de')
                     }}
                 >
                     <a>
-                        <span className="badge badge-outline w-10">DE</span>
-                        Deutsch
+                        <GermanItem />
                     </a>
                 </li>
                 <li
                     onClick={() => {
-                        setUserLocale('fr')
+                        handleLanguageChange('fr')
                     }}
                 >
                     <a>
-                        <span className="badge badge-outline w-10">FR</span>
-                        Francais
+                        <FrenchItem />
                     </a>
                 </li>
                 <li
                     onClick={() => {
-                        setUserLocale('it')
+                        handleLanguageChange('it')
                     }}
                 >
                     <a>
-                        <span className="badge badge-outline w-10">IT</span>
-                        Italiano
+                        <ItalianItem />
                     </a>
                 </li>
                 <li
                     onClick={() => {
-                        setUserLocale('en')
+                        handleLanguageChange('en')
                     }}
                 >
                     <a>
-                        <span className="badge badge-outline w-10">EN</span>
-                        English
+                        <EnglishItem />
                     </a>
                 </li>
             </ul>
@@ -62,16 +79,24 @@ export const LanguageSelector = () => {
     )
 }
 
-const LanguageIcon = () => {
+const GermanItem = () => <LanguageItem shortLang="DE" lang="Deutsch" />
+const ItalianItem = () => <LanguageItem shortLang="IT" lang="Italiano" />
+const EnglishItem = () => <LanguageItem shortLang="EN" lang="English" />
+const FrenchItem = () => <LanguageItem shortLang="FR" lang="Francais" />
+
+type LanguageItemProps = {
+    shortLang: 'DE' | 'EN' | 'IT' | 'FR'
+    lang: 'Deutsch' | 'English' | 'Italiano' | 'Francais'
+}
+
+const LanguageItem = ({ shortLang, lang }: LanguageItemProps) => {
     return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="bi bi-translate size-4 lg:size-6 dark:fill-white fill-black"
-            viewBox="0 0 16 16"
-        >
-            <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
-            <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
-        </svg>
+        <>
+            <span className="sm:badge sm:badge-outline sm:w-10">
+                {shortLang}
+            </span>
+            <span className="hidden md:inline">{lang}</span>
+        </>
     )
 }
 
