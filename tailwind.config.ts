@@ -18,6 +18,9 @@ const config: Config = {
             colors: {
                 backgroundDark: '#1d232a',
                 backgroundLight: '#eceff4',
+                cardDark: '#282f39',
+                cardLight: '#fafcfc',
+                shimmer: '#36c9b9'
             },
         },
     },
