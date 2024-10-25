@@ -9,5 +9,9 @@
     "typescript.inlayHints.variableTypes.enabled": true,
     "typescript.surveys.enabled": false,
     "i18n-ally.localesPaths": ["messages", "src/i18n"],
-    "editor.colorDecoratorsLimit": 5000
+    "editor.colorDecoratorsLimit": 5000,
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.extract.ignoredByFiles": {
+        "src/components/Home/UniqueSellingPoint.tsx": ["0 -960 960 960"]
+    }
 }
