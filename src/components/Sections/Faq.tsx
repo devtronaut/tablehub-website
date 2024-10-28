@@ -1,10 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { SectionTitle } from '../Util/SectionTitle'
-import { TableDemo } from './Demo'
 
 const FaqSection = () => {
-    const t = useTranslations('demo')
-
     return (
         <div
             id="faq"
