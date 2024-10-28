@@ -2,6 +2,7 @@ import Header from '../components/Util/Header'
 import HomeSection from '../components/Sections/Home'
 import AboutSection from '../components/Sections/About'
 import DemoSection from '../components/Sections/Demo'
+import FaqSection from '@/components/Sections/Faq'
 
 const Landing = () => {
     return (
@@ -11,6 +12,7 @@ const Landing = () => {
                 <HomeSection />
                 <DemoSection />
                 <AboutSection />
+                <FaqSection />
             </main>
         </div>
     )

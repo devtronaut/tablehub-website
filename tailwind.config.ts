@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss'
 import daisyui from 'daisyui'
-import { transform } from 'next/dist/build/swc'
+import containerQueries from '@tailwindcss/container-queries'
 
 const config: Config = {
     darkMode: 'selector',
@@ -52,7 +52,7 @@ const config: Config = {
             },
         },
     },
-    plugins: [daisyui],
+    plugins: [daisyui, containerQueries],
     daisyui: {
         base: false,
     },

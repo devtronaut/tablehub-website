@@ -1,16 +1,21 @@
 {
-    "home": {
-        "welcome": "Willkommen bei",
-        "interested": "Interessiert? Cool,",
-        "readon": "weiterlesen..."
-    },
-    "usp": {
-        "intro": "Werten Sie Ihre Vereinshomepage mit Ergebnissen, Spielen und Ranglisten auf!",
-        "updatedTitle": "Aktualisiert",
-        "updatedContent": "Täglich aktualisierte Informationen von der Swiss Volley API.",
-        "automatedTitle": "Automatisiert",
-        "automatedContent": "Nach der Ersteinrichtung sind keine weiteren manuellen Schritte erforderlich.",
-        "simpleTitle": "Einfach",
-        "simpleContent": "Entwickelt mit Blick auf den Endbenutzer. Geringe Komplexität, einfache Integration, guter Support."
-    }
+  "home": {
+    "welcome": "Willkommen bei",
+    "interested": "Interessiert? Cool,",
+    "readon": "weiterlesen..."
+  },
+  "usp": {
+    "intro": "Werten Sie Ihre Vereinshomepage mit Ergebnissen, Spielen und Ranglisten auf!",
+    "updatedTitle": "Aktualisiert",
+    "updatedContent": "Täglich aktualisierte Informationen von der Swiss Volley API.",
+    "automatedTitle": "Automatisiert",
+    "automatedContent": "Nach der Ersteinrichtung sind keine weiteren manuellen Schritte erforderlich.",
+    "simpleTitle": "Einfach",
+    "simpleContent": "Entwickelt mit Blick auf den Endbenutzer. Geringe Komplexität, einfache Integration, guter Support."
+  },
+  "demo": {
+    "resize": "Ziehen Sie den linken oder rechten Rand des Felds, um die Größe zu ändern.",
+    "title": "Demo",
+    "intro": "Diese Tabellen sind so konzipiert, dass sie auf Geräten unterschiedlicher Größe funktionieren, ohne dass relevante Daten verloren gehen. \nSehen Sie, wie mit unterschiedlichen Größen umgegangen wird, indem Sie die Größe des Felds unten ändern."
+  }
 }
