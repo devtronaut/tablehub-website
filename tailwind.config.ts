@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss'
 import daisyui from 'daisyui'
-import { transform } from 'next/dist/build/swc'
+import containerQueries from '@tailwindcss/container-queries'
 
 const config: Config = {
     darkMode: 'selector',
@@ -19,7 +19,7 @@ const config: Config = {
             colors: {
                 backgroundDark: '#1d232a',
                 backgroundLight: '#eceff4',
-                cardDark: '#282f39',
+                cardDark: '#15191e',
                 cardLight: '#fafcfc',
                 shimmer: '#36c9b9',
             },
@@ -52,7 +52,7 @@ const config: Config = {
             },
         },
     },
-    plugins: [daisyui],
+    plugins: [daisyui, containerQueries],
     daisyui: {
         base: false,
     },

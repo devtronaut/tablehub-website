@@ -12,5 +12,10 @@
         "simpleContent": "Développé en pensant à l'utilisateur final. Peu de complexité, intégration facile, bon support.",
         "simpleTitle": "Simple",
         "updatedContent": "Informations mises à jour quotidiennement depuis l’API Swiss Volley."
+    },
+    "demo": {
+        "resize": "Faites glisser la bordure gauche ou droite de la zone pour la redimensionner.",
+        "title": "Démo",
+        "intro": "Ces tableaux sont conçus pour fonctionner sur différentes tailles d'appareils sans perdre les données pertinentes. \nDécouvrez comment les différentes tailles sont gérées en redimensionnant la case ci-dessous."
     }
 }

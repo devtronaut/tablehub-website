@@ -7,6 +7,7 @@ enum Section {
     HOME = '#home',
     DEMO = '#demo',
     ABOUT = '#about',
+    FAQ = '#faq',
 }
 
 export const Navbar = () => {
@@ -52,6 +53,13 @@ export const Navbar = () => {
                 targetHash="#about"
                 targetSection={Section.ABOUT}
                 isActive={currentSection === Section.ABOUT}
+                onNavigate={setCurrentSection}
+            />
+            <NavLink
+                linkText="FAQ"
+                targetHash="#faq"
+                targetSection={Section.FAQ}
+                isActive={currentSection === Section.FAQ}
                 onNavigate={setCurrentSection}
             />
         </div>

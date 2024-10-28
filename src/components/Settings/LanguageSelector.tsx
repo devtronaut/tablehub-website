@@ -36,7 +36,7 @@ export const LanguageSelector = () => {
             </div>
             <ul
                 tabIndex={0}
-                className="dropdown-content menu dark:bg-backgroundDark/75 bg-backgroundLight/75 backdrop-blur-sm rounded-box z-[1] w-52 p-2 shadow"
+                className="dropdown-content menu dark:bg-backgroundDark/75 bg-backgroundLight/75 backdrop-blur-sm rounded-box z-[1] w-fit p-2 shadow"
             >
                 <li
                     onClick={() => {
