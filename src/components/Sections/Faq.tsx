@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import { SectionTitle } from '../Util/SectionTitle'
 
 const FaqSection = () => {
