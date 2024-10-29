@@ -9,7 +9,7 @@
         "updatedTitle": "Aggiornato",
         "automatedContent": "Nessuna azione manuale richiesta dopo la configurazione iniziale.",
         "automatedTitle": "Automatizzato",
-        "simpleContent": "Sviluppato pensando all'utente finale. \nPoca complessità, facile integrazione, buon supporto.",
+        "simpleContent": "Sviluppato pensando all'utente finale. Poca complessità, facile integrazione, buon supporto.",
         "simpleTitle": "Semplice",
         "updatedContent": "Informazioni aggiornate quotidianamente da Swiss Volley API."
     },
@@ -17,5 +17,11 @@
         "resize": "Trascina il bordo sinistro o destro della casella per ridimensionarla.",
         "title": "Dimostrazione",
         "intro": "Queste tabelle sono progettate per funzionare su dispositivi di diverse dimensioni senza perdere dati rilevanti. \nScopri come vengono gestite le diverse dimensioni ridimensionando la casella sottostante."
+    },
+    "about": {
+        "intro": "Tablehub è un servizio che permette alle società di pallavolo di visualizzare risultati, prossime partite e classifiche sui propri siti web in modo automatizzato e con il minimo sforzo. Tablehub utilizza i dati dell'API Swiss Volley. Non è in nessun altro modo associato o supportato da Swiss Volley.",
+        "thanks": "Grazie ai club per aver utilizzato Tablehub! ❤️",
+        "contribution": "Il progetto è attualmente guidato da una persona. Questo può essere un limite da un lato, ma si traduce in una stretta interazione con i club che utilizzano Tablehub. Tablehub è un progetto open source. La collaborazione è molto apprezzata!",
+        "title": "Su Tablehub"
     }
 }

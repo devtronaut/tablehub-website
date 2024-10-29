@@ -19,6 +19,9 @@
     "title": "Demo"
   },
   "about": {
-    "title": "About"
+    "title": "About",
+    "intro": "Tablehub is a service to allow volleyball clubs the display of results, upcoming games and rankings on their websites in an automated fashion, with very little effort. Tablehub uses data from the Swiss Volley API. It is in no other way associated with or supported by Swiss Volley.",
+    "thanks": "Thanks to the clubs for using Tablehub! ❤️",
+    "contribution": "The project is currently driven by one person. This can be a limitation on one hand but results in close interaction with the clubs using Tablehub. Tablehub is an open source project. Collaboration is much appreciated!"
   }
 }
