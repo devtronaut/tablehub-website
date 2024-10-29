@@ -1,5 +1,11 @@
 import { useTranslations } from 'next-intl'
 import { SectionTitle } from '../Util/SectionTitle'
+import React, {
+    JSXElementConstructor,
+    ReactElement,
+    ReactNode,
+    ReactNodeArray,
+} from 'react'
 
 const FaqSection = () => {
     const t = useTranslations('faq')
@@ -12,29 +18,54 @@ const FaqSection = () => {
 
             <div className="w-full lg:w-1/2 space-y-4">
                 <FaqElement
-                    question={t('qWhyTablehub')}
-                    answer={t('aWhyTablehub')}
+                    question={`${t('qWhyTablehub')}`}
+                    answer={t.rich('aWhyTablehub', {
+                        about: chunks => (
+                            <a href="#about" className="underline text-shimmer">
+                                {chunks}
+                            </a>
+                        ),
+                    })}
                 />
-                <FaqElement question={t('qHowWork')} answer={t('aHowWork')} />
-                <FaqElement question={t('qBeta')} answer={t('aBeta')} />
-                <FaqElement question={t('qCost')} answer={t('aCost')} />
+                <FaqElement
+                    question={`${t('qHowWork')}`}
+                    answer={`${t('aHowWork')}`}
+                />
+                <FaqElement question={`${t('qBeta')}`} answer={t('aBeta')} />
+                <FaqElement
+                    question={t('qCost')}
+                    answer={t.rich('aCost', {
+                        email: chunks => (
+                            <a
+                                href="mailto:tablehub@hotmail.com"
+                                className="underline text-shimmer"
+                            >
+                                {chunks}
+                            </a>
+                        ),
+                    })}
+                />
             </div>
         </div>
     )
 }
 
 type FaqProps = {
+    children?: ReactNode
     question: string
-    answer: string
+    answer?:
+        | string
+        | ReactElement<any, string | JSXElementConstructor<any>>
+        | ReactNodeArray
 }
 
-const FaqElement = ({ question, answer }: FaqProps) => {
+const FaqElement = ({ children, question, answer }: FaqProps) => {
     return (
         <div className="collapse collapse-arrow bg-cardLight dark:bg-cardDark shadow-md shadow-shimmer">
             <input type="radio" name="faq" />
             <div className="collapse-title font-semibold">{question}</div>
-            <div className="collapse-content whitespace-pre text-wrap">
-                <p>{answer}</p>
+            <div className="collapse-content whitespace-pre-line text-wrap">
+                {answer}
             </div>
         </div>
     )
