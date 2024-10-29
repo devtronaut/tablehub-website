@@ -1,21 +1,24 @@
 {
-    "home": {
-        "welcome": "Welcome to",
-        "interested": "Interested? Cool,",
-        "readon": "read on ..."
-    },
-    "usp": {
-        "intro": "Enhance your club homepage with results, games and rankings!",
-        "updatedTitle": "Updated",
-        "updatedContent": "Information updated daily from Swiss Volley API.",
-        "automatedTitle": "Automated",
-        "automatedContent": "No manual action required after initial setup.",
-        "simpleTitle": "Simple",
-        "simpleContent": "Developed with the end user in mind. Little complexity, easy integration, good support."
-    },
-    "demo": {
-        "intro": "These tables are designed to work on different sizes of devices without losing relevant data. See how different sizes are handled by resizing the box below.",
-        "resize": "Drag the left or right border of the box to resize.",
-        "title": "Demo"
-    }
+  "home": {
+    "welcome": "Welcome to",
+    "interested": "Interested? Cool,",
+    "readon": "read on ..."
+  },
+  "usp": {
+    "intro": "Enhance your club homepage with results, games and rankings!",
+    "updatedTitle": "Updated",
+    "updatedContent": "Information updated daily from Swiss Volley API.",
+    "automatedTitle": "Automated",
+    "automatedContent": "No manual action required after initial setup.",
+    "simpleTitle": "Simple",
+    "simpleContent": "Developed with the end user in mind. Little complexity, easy integration, good support."
+  },
+  "demo": {
+    "intro": "These tables are designed to work on different sizes of devices without losing relevant data. See how different sizes are handled by resizing the box below.",
+    "resize": "Drag the left or right border of the box to resize.",
+    "title": "Demo"
+  },
+  "about": {
+    "title": "About"
+  }
 }
