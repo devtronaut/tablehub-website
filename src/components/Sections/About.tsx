@@ -4,7 +4,6 @@ import { SectionTitle } from '../Util/SectionTitle'
 import Image, { StaticImageData } from 'next/image'
 import vbcUniBernLogo from '../../../public/clubs/VBCUniBern.png'
 import volleyLuzernLogo from '../../../public/clubs/VolleyLuzern.png'
-import path from 'path'
 
 const AboutSection = () => {
     const t = useTranslations('about')
