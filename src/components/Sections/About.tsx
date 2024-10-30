@@ -30,6 +30,7 @@ const AboutSection = () => {
                                 clubName="Volley Luzern"
                                 clubLink="https://volleyluzern.ch/"
                                 clubLogo={volleyLuzernLogo}
+                                active={false}
                             />
                         </div>
                     </div>
@@ -44,6 +45,7 @@ const AboutSection = () => {
                         <GitHubTag
                             projectName="tablehub-core"
                             projectLink="https://github.com/devtronaut/tablehub-core"
+                            comingSoon={true}
                         />
                         <GitHubTag
                             projectName="tablehub-website"
@@ -56,20 +58,21 @@ const AboutSection = () => {
     )
 }
 
-type GitHubTagProps = {
-    projectLink: string
-    projectName: string
-}
-
 type ClubLogoProps = {
     clubName: string
     clubLink: string
     clubLogo: StaticImageData
+    active?: boolean
 }
 
-const ClubLogo = ({ clubName, clubLink, clubLogo }: ClubLogoProps) => {
+const ClubLogo = ({
+    clubName,
+    clubLink,
+    clubLogo,
+    active = true,
+}: ClubLogoProps) => {
     return (
-        <a href={clubLink} target="_blank">
+        <a href={clubLink} target="_blank" className={`${!active && 'hidden'}`}>
             <div className="size-24 bg-white p-1 rounded-full overflow-clip">
                 <Image
                     src={clubLogo}
@@ -81,9 +84,28 @@ const ClubLogo = ({ clubName, clubLink, clubLogo }: ClubLogoProps) => {
     )
 }
 
-const GitHubTag = ({ projectLink, projectName }: GitHubTagProps) => {
+type GitHubTagProps = {
+    projectLink: string
+    projectName: string
+    comingSoon?: boolean
+}
+
+const GitHubTag = ({
+    projectLink,
+    projectName,
+    comingSoon = false,
+}: GitHubTagProps) => {
     return (
-        <a href={projectLink} target="_blank">
+        <a
+            href={!comingSoon ? projectLink : ''}
+            target="_blank"
+            className="relative"
+        >
+            {comingSoon && (
+                <div className="badge badge-accent w-fit absolute -bottom-2 -right-2">
+                    Coming soon!
+                </div>
+            )}
             <div className="h-fit w-full sm:w-fit flex flex-row items-center gap-3 bg-cardLight dark:bg-cardDark p-3 rounded-xl shadow-md shadow-shimmer">
                 <svg
                     viewBox="0 0 98 96"
