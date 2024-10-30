@@ -3,7 +3,6 @@ import { SectionTitle } from '../Util/SectionTitle'
 import React, {
     JSXElementConstructor,
     ReactElement,
-    ReactNode,
     ReactNodeArray,
 } from 'react'
 
@@ -21,7 +20,10 @@ const FaqSection = () => {
                     question={`${t('qWhyTablehub')}`}
                     answer={t.rich('aWhyTablehub', {
                         about: chunks => (
-                            <a href="#about" className="underline text-shimmer">
+                            <a
+                                href="#about"
+                                className="underline text-shimmerDark dark:text-shimmer"
+                            >
                                 {chunks}
                             </a>
                         ),
@@ -38,7 +40,7 @@ const FaqSection = () => {
                         email: chunks => (
                             <a
                                 href="mailto:tablehub@hotmail.com"
-                                className="underline text-shimmer"
+                                className="underline text-shimmerDark dark:text-shimmer"
                             >
                                 {chunks}
                             </a>
@@ -51,7 +53,6 @@ const FaqSection = () => {
 }
 
 type FaqProps = {
-    children?: ReactNode
     question: string
     answer?:
         | string
@@ -59,7 +60,7 @@ type FaqProps = {
         | ReactNodeArray
 }
 
-const FaqElement = ({ children, question, answer }: FaqProps) => {
+const FaqElement = ({ question, answer }: FaqProps) => {
     return (
         <div className="collapse collapse-arrow bg-cardLight dark:bg-cardDark shadow-md shadow-shimmer">
             <input type="radio" name="faq" />

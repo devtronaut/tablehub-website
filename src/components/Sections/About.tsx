@@ -95,6 +95,8 @@ const GitHubTag = ({
     projectName,
     comingSoon = false,
 }: GitHubTagProps) => {
+    const t = useTranslations('about')
+
     return (
         <a
             href={!comingSoon ? projectLink : ''}
@@ -103,7 +105,7 @@ const GitHubTag = ({
         >
             {comingSoon && (
                 <div className="badge badge-accent w-fit absolute -bottom-2 -right-2">
-                    Coming soon!
+                    {t('comingSoon')}
                 </div>
             )}
             <div className="h-fit w-full sm:w-fit flex flex-row items-center gap-3 bg-cardLight dark:bg-cardDark p-3 rounded-xl shadow-md shadow-shimmer">
