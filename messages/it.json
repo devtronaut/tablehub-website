@@ -1,21 +1,38 @@
 {
-    "home": {
-        "welcome": "Benvenuti a",
-        "interested": "Interessato? Freddo,",
-        "readon": "continua a leggere..."
-    },
-    "usp": {
-        "intro": "Arricchisci la home page del tuo club con risultati, partite e classifiche!",
-        "updatedTitle": "Aggiornato",
-        "automatedContent": "Nessuna azione manuale richiesta dopo la configurazione iniziale.",
-        "automatedTitle": "Automatizzato",
-        "simpleContent": "Sviluppato pensando all'utente finale. \nPoca complessità, facile integrazione, buon supporto.",
-        "simpleTitle": "Semplice",
-        "updatedContent": "Informazioni aggiornate quotidianamente da Swiss Volley API."
-    },
-    "demo": {
-        "resize": "Trascina il bordo sinistro o destro della casella per ridimensionarla.",
-        "title": "Dimostrazione",
-        "intro": "Queste tabelle sono progettate per funzionare su dispositivi di diverse dimensioni senza perdere dati rilevanti. \nScopri come vengono gestite le diverse dimensioni ridimensionando la casella sottostante."
-    }
+  "home": {
+    "welcome": "Benvenuti a",
+    "interested": "Interessato? Freddo,",
+    "readon": "continua a leggere..."
+  },
+  "usp": {
+    "intro": "Arricchisci la home page del tuo club con risultati, partite e classifiche!",
+    "updatedTitle": "Aggiornato",
+    "automatedContent": "Nessuna azione manuale richiesta dopo la configurazione iniziale.",
+    "automatedTitle": "Automatizzato",
+    "simpleContent": "Sviluppato pensando all'utente finale. Poca complessità, facile integrazione, buon supporto.",
+    "simpleTitle": "Semplice",
+    "updatedContent": "Informazioni aggiornate quotidianamente da Swiss Volley API."
+  },
+  "demo": {
+    "resize": "Trascina il bordo sinistro o destro della casella per ridimensionarla.",
+    "title": "Dimostrazione",
+    "intro": "Queste tabelle sono progettate per funzionare su dispositivi di diverse dimensioni senza perdere dati rilevanti. \nScopri come vengono gestite le diverse dimensioni ridimensionando la casella sottostante."
+  },
+  "about": {
+    "intro": "Tablehub è un servizio che permette alle società di pallavolo di visualizzare risultati, prossime partite e classifiche sui propri siti web in modo automatizzato e con il minimo sforzo. Tablehub utilizza i dati dell'API Swiss Volley. Non è in nessun altro modo associato o supportato da Swiss Volley.",
+    "thanks": "Grazie ai club per aver utilizzato Tablehub! ❤️",
+    "contribution": "Il progetto è attualmente guidato da una persona. Questo può essere un limite da un lato, ma si traduce in una stretta interazione con i club che utilizzano Tablehub. Tablehub è un progetto open source. La collaborazione è molto apprezzata!",
+    "title": "Su Tablehub",
+    "comingSoon": "Prossimamente!"
+  },
+  "faq": {
+    "qWhyTablehub": "Perché dovremmo usare Tablehub? L'API SwissVolley non è sufficiente?",
+    "aWhyTablehub": "L'API SwissVolley è un'ottima iniziativa e viene utilizzata come origine dati per Tablehub. Tuttavia non offre ai club un modo semplice per presentare i dati sui propri siti web. \n\nDi conseguenza, ogni club dovrebbe creare la propria soluzione personalizzata attorno all'API per utilizzare i dati. Tablehub vuole semplificare questo processo e offrire una soluzione centrale ed espandibile. Aprendo il sorgente del progetto (vedere <about>About</about>), altri sviluppatori con lo stesso obiettivo sono incoraggiati a contribuire a Tablehub, invece di creare qualcosa da zero, con lo stesso obiettivo.",
+    "qHowWork": "Come funziona TableHub?",
+    "aHowWork": "Tablehub funziona con un proprio backend e un archivio dati. Lo scopo è da un lato quello di essere meno dipendenti dall'API SwissVolley in termini di infrastruttura e dati e dall'altro quello di proteggere le chiavi API dei club che si affidano a Tablehub. Offrire solo una soluzione frontend significherebbe esporre la chiave API al pubblico, cosa che dovrebbe essere evitata. \n\nTutta l'infrastruttura viene utilizzata da AWS (utilizzando Lambdas, DynamoDB e API Gateway).",
+    "qBeta": "Cos'è la fase beta? Quando avverrà il primo rilascio in produzione?",
+    "aBeta": "Il predecessore funzionalmente comparabile di Tablehub funziona ed è utilizzato da VBC Uni Bern senza grossi problemi da due anni. È quindi considerato stabile. \n\nOra che più club dovrebbero essere in grado di utilizzare Tablehub, sono previsti altri modelli di utilizzo e requisiti per il servizio. Con la fase beta, tali modelli e requisiti verranno valutati con i club partecipanti. Verranno apportati miglioramenti durante e dopo la fase beta, per rendere Tablehub adatto a un pubblico ancora più ampio di club di pallavolo. \n\nL'uscita della produzione è prevista per l'estate 2025 in preparazione della stagione di pallavolo indoor del 2025/26. I club possono entrare a far parte della beta su richiesta (vedi domanda successiva).",
+    "qCost": "Come possiamo usare Tablehub? Qual è il costo del servizio?",
+    "aCost": "Un altro obiettivo della fase beta è scoprire in che misura Tablehub può essere reso self-service. Pertanto durante la fase beta potranno essere inseriti solo pochi club. \n\nSe sei interessato a utilizzare Tablehub per la home page del tuo club, invia la tua richiesta a <email>tablehub@hotmail.com</email>. Se la beta è già piena di altri club, verrai avvisato non appena il rilascio produttivo avverrà nell'estate 2025.\n\nIl costo per utilizzare il servizio è una quota annuale di CHF 50.- CHF 5.- per ogni squadra con un set di dati dell'API SwissVolley (vale a dire, il costo per l'utilizzo di Tablehub per un club con 7 squadre è di CHF 50.- più CHF 35.-)."
+  }
 }

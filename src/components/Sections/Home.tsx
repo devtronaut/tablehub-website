@@ -17,7 +17,10 @@ const HomeSection = () => {
             <UniqueSellingPoint />
             <p>
                 {t('interested')}{' '}
-                <a href="#demo" className="text-shimmer hover:underline">
+                <a
+                    href="#demo"
+                    className="text-shimmerDark dark:text-shimmer hover:underline"
+                >
                     {t('readon')}
                 </a>
             </p>

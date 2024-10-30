@@ -22,6 +22,7 @@ const config: Config = {
                 cardDark: '#15191e',
                 cardLight: '#fafcfc',
                 shimmer: '#36c9b9',
+                shimmerDark: '#1e7067'
             },
             animation: {
                 wiggle: 'wiggle 2s ease infinite',
