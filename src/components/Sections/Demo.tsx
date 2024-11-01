@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from 'react'
 import { SectionTitle } from '../Util/SectionTitle'
-import { DemoTables } from '@devtronaut/tablehub-component'
 import { useTranslations } from 'next-intl'
+import { DemoTables } from '@tablehub/tablehub-component'
 
 const DemoSection = () => {
     const t = useTranslations('demo')

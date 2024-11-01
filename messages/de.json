@@ -2,37 +2,37 @@
   "home": {
     "welcome": "Willkommen bei",
     "interested": "Interessiert? Cool,",
-    "readon": "weiterlesen..."
+    "readon": "lies weiter..."
   },
   "usp": {
-    "intro": "Werten Sie Ihre Vereinshomepage mit Ergebnissen, Spielen und Ranglisten auf!",
+    "intro": "Werte deine Vereinshomepage mit Ergebnissen, Spielen und Ranglisten auf!",
     "updatedTitle": "Aktualisiert",
     "updatedContent": "Täglich aktualisierte Informationen von der Swiss Volley API.",
     "automatedTitle": "Automatisiert",
     "automatedContent": "Nach der Ersteinrichtung sind keine weiteren manuellen Schritte erforderlich.",
     "simpleTitle": "Einfach",
-    "simpleContent": "Entwickelt mit Blick auf den Endbenutzer. Geringe Komplexität, einfache Integration, guter Support."
+    "simpleContent": "Entwickelt für den Benutzer. Geringe Komplexität, einfache Integration, unkomplizierter Support."
   },
   "demo": {
-    "resize": "Ziehen Sie den linken oder rechten Rand des Felds, um die Größe zu ändern.",
+    "resize": "Ziehe den linken oder rechten Rand des Fensters, um seine Größe zu ändern.",
     "title": "Demo",
-    "intro": "Diese Tabellen sind so konzipiert, dass sie auf Geräten unterschiedlicher Größe funktionieren, ohne dass relevante Daten verloren gehen. \nSehen Sie, wie mit unterschiedlichen Größen umgegangen wird, indem Sie die Größe des Felds unten ändern."
+    "intro": "Die Tabellen sind so konzipiert, dass sie auf Geräten unterschiedlicher Größe funktionieren, ohne dass relevante Daten verloren gehen. \nSieh, wie mit unterschiedlichen Formaten umgegangen wird, indem du die Größe des folgenden Fensters änderst."
   },
   "about": {
-    "intro": "Tablehub ist ein Dienst, der es Volleyballvereinen ermöglicht, Ergebnisse, bevorstehende Spiele und Ranglisten automatisiert und mit sehr geringem Aufwand auf ihren Websites anzuzeigen. Tablehub nutzt Daten der Swiss Volley API. Es steht in keiner anderen Weise mit Swiss Volley in Verbindung oder wird von Swiss Volley unterstützt.",
+    "intro": "Tablehub ist ein Dienst, der es Volleyballvereinen ermöglicht, Ergebnisse, bevorstehende Spiele und Ranglisten automatisiert und mit sehr geringem Aufwand auf ihren Websites anzuzeigen. Tablehub nutzt Daten der Swiss Volley API. Der Service steht in keiner anderen Weise mit Swiss Volley in Verbindung.",
     "thanks": "Vielen Dank an die Vereine für die Nutzung von Tablehub! ❤️",
-    "contribution": "Das Projekt wird derzeit von einer Person geleitet. Dies kann einerseits eine Einschränkung darstellen, führt aber zu einer engen Interaktion mit den Clubs, die Tablehub nutzen. Tablehub ist ein Open-Source-Projekt. Zusammenarbeit wird sehr geschätzt!",
+    "contribution": "Das Projekt wird derzeit von einer Person weiterentwickelt. Dies kann einerseits eine Einschränkung darstellen, führt aber zu einer engen Interaktion mit den Clubs, die Tablehub einsetzen. Tablehub ist ein Open-Source-Projekt. Zusammenarbeit wird sehr geschätzt!",
     "title": "Über Tablehub",
     "comingSoon": "Kommt bald!"
   },
   "faq": {
     "qWhyTablehub": "Warum sollten wir Tablehub verwenden? Reicht die SwissVolley API nicht aus?",
-    "aWhyTablehub": "Die SwissVolley API ist eine großartige Initiative und wird als Datenquelle für Tablehub verwendet. Allerdings bietet es den Vereinen keine einfache Möglichkeit, die Daten auf ihren Websites darzustellen. \n\nInfolgedessen müsste jeder Club seine eigene individuelle Lösung rund um die API entwickeln, um die Daten nutzen zu können. Tablehub möchte diesen Prozess rationalisieren und eine zentrale und erweiterbare Lösung anbieten. Durch das Öffnen der Quelle für das Projekt (siehe <about>About</about>) werden andere Entwickler mit demselben Ziel ermutigt, zu Tablehub beizutragen, anstatt etwas von Grund auf mit demselben Ziel zu erstellen.",
-    "aHowWork": "Tablehub arbeitet mit einem eigenen Backend und Datenspeicher. Dies dient erstens dazu, infrastrukturell und datentechnisch weniger abhängig von der SwissVolley API zu sein, und zweitens, um die API-Schlüssel der Vereine zu schützen, die auf Tablehub setzen. Nur das Anbieten einer Frontend-Lösung würde bedeuten, dass der API-Schlüssel der Öffentlichkeit zugänglich gemacht wird, was vermieden werden sollte. \n\nDie gesamte Infrastruktur wird von AWS genutzt (mit Lambdas, DynamoDB und API Gateway).",
+    "aWhyTablehub": "Die SwissVolley API ist eine großartige Initiative und wird als Datenquelle für Tablehub verwendet. Allerdings bietet es den Vereinen keine einfache Möglichkeit, die Daten auf ihren Websites darzustellen. \n\nInfolgedessen müsste jeder Club seine eigene individuelle Lösung rund um die API entwickeln, um die Daten nutzen zu können. Tablehub möchte diesen Prozess vereinfachen und eine zentrale und erweiterbare Lösung anbieten. Das Projekt is Open Source (siehe <about>About</about>). Damit werden andere Entwickler mit demselben Ziel ermutigt, zu Tablehub beizutragen, anstatt etwas von Grund auf mit demselben Ziel zu erstellen.",
+    "qHowWork": "Wie funktioniert Tablehub?",
+    "aHowWork": "Tablehub arbeitet mit einem eigenen Backend und Datenspeicher. Dies dient zunächst dazu, infrastrukturell und datentechnisch weniger abhängig von der SwissVolley API zu sein, und zweitens, um die API-Schlüssel der Vereine zu schützen, die auf Tablehub setzen. Das Anbieten einer Frontend-Lösung würde bedeuten, dass der API-Schlüssel der Öffentlichkeit zugänglich gemacht wird, was vermieden werden sollte. \n\nDie gesamte Infrastruktur wird von AWS bezogen (mit Lambdas, DynamoDB und API Gateway).",
     "qBeta": "Was ist die Betaphase? Wann erfolgt die erste Produktionsveröffentlichung?",
-    "aBeta": "Der funktionell vergleichbare Vorgänger von Tablehub läuft und wird von der VBC Uni Bern seit zwei Jahren ohne größere Probleme genutzt. Es gilt daher als stabil. \n\nDa nun mehr Clubs Tablehub nutzen können sollen, sind andere Nutzungsmuster und Anforderungen für den Dienst zu erwarten. In der Betaphase werden diese Muster und Anforderungen mit den teilnehmenden Vereinen evaluiert. Während und nach der Beta-Phase werden Verbesserungen vorgenommen, um Tablehub für ein noch breiteres Publikum von Volleyballvereinen fit zu machen. \n\nEine Produktionsveröffentlichung ist für Sommer 2025 in Vorbereitung auf die Indoor-Volleyball-Saison 2025/26 geplant. Clubs können auf Anfrage Teil der Beta werden (siehe nächste Frage).",
+    "aBeta": "Der funktionell vergleichbare Vorgänger von Tablehub läuft und wird beim VBC Uni Bern seit zwei Jahren ohne größere Probleme genutzt. Die Grundfunktion gilt daher als stabil und geprüft. \n\nDa nun mehr Clubs Tablehub nutzen sollen, sind andere Nutzungsmuster und Anforderungen für den Service zu erwarten. In der Beta-Phase werden diese Muster und Anforderungen mit den teilnehmenden Vereinen evaluiert. Während und nach der Beta-Phase werden Verbesserungen vorgenommen, um Tablehub für ein noch breiteres Publikum von Volleyballvereinen fit zu machen. \n\nEine Produktiv-Veröffentlichung ist für Sommer 2025 geplant, in Vorbereitung auf die Indoor-Volleyball-Saison 2025/26. Clubs können auf Anfrage Teil der Beta werden (siehe nächste Frage).",
     "qCost": "Wie können wir Tablehub nutzen? Wie hoch sind die Kosten für den Service?",
-    "aCost": "Ein weiteres Ziel der Beta-Phase ist es herauszufinden, inwieweit Tablehub als Self-Service nutzbar ist. Daher können während der Beta-Phase nur wenige Clubs an Bord genommen werden. \n\nWenn Sie daran interessiert sind, Tablehub für Ihre Club-Homepage zu verwenden, wenden Sie sich mit Ihrer Anfrage an <email>tablehub@hotmail.com</email>. Wenn die Beta bereits mit anderen Vereinen belegt ist, werden Sie benachrichtigt, sobald die produktive Veröffentlichung im Sommer 2025 erfolgt.\n\nDie Kosten für die Nutzung des Dienstes belaufen sich auf eine jährliche Gebühr von CHF 50.- und CHF 5.- für jedes Team mit einem Datensatz aus der SwissVolley API (d. h. die Kosten für die Nutzung von Tablehub für einen Verein mit 7 Teams betragen CHF 50.- plus CHF 35.-).",
-    "qHowWork": "Wie funktioniert Tablehub?"
+    "aCost": "Ein weiteres Ziel der Beta-Phase ist es herauszufinden, inwieweit Tablehub als Self-Service nutzbar ist. Daher können während der Beta-Phase nur wenige Clubs an Bord genommen werden. \n\nWenn Du daran interessiert bist, Tablehub für Deine Club-Homepage zu verwenden, wenden dich mit Deiner Anfrage an <email>tablehub@hotmail.com</email>. Wenn die Beta bereits mit anderen Vereinen belegt ist, wirst Du benachrichtigt, sobald die produktive Veröffentlichung im Sommer 2025 erfolgt.\n\nDie Kosten für die Nutzung des Dienstes belaufen sich auf eine jährliche pauschale Gebühr von CHF 50.- und CHF 5.- für jedes Team mit einem Datensatz aus der SwissVolley API (d.h. die Kosten für die Nutzung von Tablehub für einen Verein mit 7 Teams betragen CHF 50.- plus CHF 35.-)."
   }
 }
