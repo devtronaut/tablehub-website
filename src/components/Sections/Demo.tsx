@@ -103,7 +103,7 @@ export const TableDemo = () => {
 
     return (
         <div
-            className="mockup-window min-w-96 bg-cardLight dark:bg-cardDark border border-none shadow-md shadow-shimmer w-3/5 -z-10"
+            className="mockup-window min-w-96 bg-cardLight dark:bg-cardDark border border-none shadow-md shadow-shimmer w-3/5"
             ref={refBox}
         >
             <div
