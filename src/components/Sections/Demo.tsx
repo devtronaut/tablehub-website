@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react'
 import { SectionTitle } from '../Util/SectionTitle'
 import { useTranslations } from 'next-intl'
-import { DemoTables } from '@tablehub/tablehub-component'
+import { VolleyTables } from '@tablehub/tablehub-component'
 
 const DemoSection = () => {
     const t = useTranslations('demo')
@@ -16,7 +16,7 @@ const DemoSection = () => {
             <SectionTitle content={t('title')} />
             <p className="w-full text-center lg:w-1/2">{t('intro')}</p>
             <div className="flex flex-col items-center justify-center w-full gap-2">
-                <p>{t('resize')}</p>
+                <p className="text-center">{t('resize')}</p>
                 <TableDemo />
             </div>
         </div>
@@ -103,20 +103,20 @@ export const TableDemo = () => {
 
     return (
         <div
-            className="@container mockup-window min-w-96 bg-cardLight dark:bg-cardDark border border-none shadow-md shadow-shimmer w-3/5"
+            className="mockup-window min-w-96 bg-cardLight dark:bg-cardDark border border-none shadow-md shadow-shimmer w-3/5 -z-10"
             ref={refBox}
         >
             <div
                 ref={refLeft}
-                className="h-full w-4 absolute left-0 top-0 bg-cardLight dark:bg-cardDark cursor-col-resize"
+                className="h-full w-2 @md:w-4 absolute left-0 top-0 bg-cardLight dark:bg-cardDark cursor-col-resize"
             ></div>
             <div
                 ref={refRight}
-                className="h-full w-4 absolute right-0 top-0 bg-cardLight dark:bg-cardDark cursor-col-resize"
+                className="h-full w-2 @md:w-4 absolute right-0 top-0 bg-cardLight dark:bg-cardDark cursor-col-resize"
             ></div>
             <div className="w-[90%] m-auto h-full select-none">
                 <div className="w-full text-md px-2 @md:px-8">
-                    <DemoTables teamId={2798} teamName="VBC Uni Bern a" />
+                    <VolleyTables teamId={2798} teamName="VBC Uni Bern a" />
                 </div>
             </div>
         </div>

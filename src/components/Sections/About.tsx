@@ -73,11 +73,11 @@ const ClubLogo = ({
 }: ClubLogoProps) => {
     return (
         <a href={clubLink} target="_blank" className={`${!active && 'hidden'}`}>
-            <div className="size-24 bg-white p-1 rounded-full overflow-clip">
+            <div className="size-24 bg-white p-2 rounded-full overflow-clip">
                 <Image
                     src={clubLogo}
                     alt={`${clubName} Logo`}
-                    className="object-bottom"
+                    className="object-center"
                 />
             </div>
         </a>
