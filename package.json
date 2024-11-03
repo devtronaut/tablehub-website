@@ -10,7 +10,7 @@
         "format": "npx prettier . --write"
     },
     "dependencies": {
-        "@tablehub/tablehub-component": "^0.2.3",
+        "@tablehub/tablehub-component": "^0.3.0",
         "@tailwindcss/container-queries": "^0.1.1",
         "i18next": "^23.15.2",
         "install": "^0.13.0",
