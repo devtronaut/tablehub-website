@@ -30,7 +30,7 @@ const AboutSection = () => {
                                 clubName="Volley Luzern"
                                 clubLink="https://volleyluzern.ch/"
                                 clubLogo={volleyLuzernLogo}
-                                active={false}
+                                active={true}
                             />
                         </div>
                     </div>
